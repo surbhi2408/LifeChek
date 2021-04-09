@@ -1,0 +1,54 @@
+{% extends 'base.html' %}
+{% load bootstrap %}
+
+{% block title %}Doctor Profile Edit{% endblock %}
+
+{% block content %}
+<div class="inner-banner-w3ls">
+    <div class="container">
+
+    </div>
+    <!-- //banner 2 -->
+</div>
+	<!-- page details -->
+	<div class="breadcrumb-agile">
+		<div aria-label="breadcrumb">
+			<ol class="breadcrumb">
+				<li class="breadcrumb-item">
+					<a href="/">Home</a>
+				</li>
+				<li class="breadcrumb-item active" aria-current="page">Update Profile</li>
+			</ol>
+		</div>
+	</div>
+	<!-- //page details -->
+
+<div class="container">
+
+<div class="row justify-content-center">
+
+                <div class="col-lg-5 mb-5 mb-lg-0">
+                    <center> <h3>Edit Profile </h3></center>
+
+
+
+                    <form action="" method="POST">{% csrf_token %}
+                           {{ form|bootstrap }}
+
+                        <div class="row form-group">
+                            <div class="col-md-12">
+                                <input type="submit" value="Update" class="btn btn-primary btn-md text-white">
+                            </div>
+                        </div>
+
+
+                    </form>
+
+
+                </div>
+
+            </div>
+        </div>
+
+
+{% endblock %}
