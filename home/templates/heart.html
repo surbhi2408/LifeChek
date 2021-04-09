@@ -7,31 +7,19 @@
 		</div>
 		<!-- //banner 2 -->
 	</div>
-	<!-- page details -->
-	<div class="breadcrumb-agile">
-		<div aria-label="breadcrumb">
-			<ol class="breadcrumb">
-				<li class="breadcrumb-item">
-					<a href="/">Home</a>
-				</li>
-				<li class="breadcrumb-item active" aria-current="page">Heart Disease</li>
-			</ol>
-		</div>
-	</div>
-	<!-- //page details -->
 
 	<!-- contact -->
 	<div class="appointment py-5">
 		<div class="py-xl-5 py-lg-3">
 			<div class="w3ls-titles text-center mb-5">
-				<h3 class="title">Heart Disease Prediction</h3>
+				<h3 class="title" style="font-family:Italic;color:green"><b>Heart Disease Prediction</b></h3>
 				<span>
 					<i class="fas fa-user-md"></i>
 				</span>
 				<hr />
       {% if context %}
       <div class="display-4 my-2 text-center">
-        Your diabetes disease is {{ context }} 
+        Your {{ context }} heart disease
       </div>
       {% endif %}
 			</div>
@@ -40,7 +28,7 @@
 
 				</div>
 				<div class="contact-right-w3l appoint-form">
-					<h5 class="title-w3 text-center mb-5">Get In Touch</h5>
+					<h5 class="title-w3 text-center mb-5" style="font-family:Italic">Get In Touch</h5>
                     <div class="mt-4">
                         <form class="row" method="POST" action="{% url 'heart' %}">
                           {% csrf_token %}
