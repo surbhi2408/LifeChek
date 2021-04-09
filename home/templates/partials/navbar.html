@@ -25,14 +25,14 @@
 								</li>
 								<li class="ml-3">
 									<a href="#">
-										<i class="fab fa-pinterest-p"></i>
+										<i class="fab fa-instagram-in"></i>
 									</a>
 								</li>
 							</ul>
 							<!-- //social icons -->
 							<div class="col-6 header-top_w3layouts pl-3 text-lg-left text-center">
 								<p class="text-white">
-									<i class="fas fa-map-marker-alt mr-2"></i>Dhanmondi 27,Dhaka, Bangladesh</p>
+									<i class="fas fa-map-marker-alt mr-2"></i>Civil Lines, Allahabad, India</p>
 							</div>
 						</div>
 					</div>
@@ -46,7 +46,7 @@
 							</div>
 							<div class="col-lg-5 col-6 header-w3layouts pl-4 text-lg-left">
 								<p class="text-white">
-									<i class="fas fa-phone mr-2"></i>+1 000263676</p>
+									<i class="fas fa-phone mr-2"></i>+91-7754072259</p>
 							</div>
 						</div>
 					</div>
@@ -65,8 +65,8 @@
 					<!-- logo -->
 					<h1>
 						<a class="navbar-brand font-weight-bold font-italic" href="{% url 'home' %}">
-							<span>M</span>edic
-							<i class="fas fa-syringe"></i>
+							Pandemic<span>CARE</span>
+							<i class="fas fa-medkit"></i>
 						</a>
 					</h1>
 					<!-- //logo -->
@@ -81,7 +81,7 @@
 									<span class="sr-only">(current)</span>
 								</a>
 							</li>
-							
+
 							<li class="nav-item dropdown nav-item  mx-lg-3 my-lg-0 my-3">
 								<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
 								    aria-haspopup="true" aria-expanded="false">
@@ -92,12 +92,11 @@
 									<a class="dropdown-item " href="{% url 'diabetes' %}">Diabetes Prediction</a>
 									<a class="dropdown-item " href="{% url 'breast' %}">Breast Cancer Prediction</a>
 									<a class="dropdown-item " href="{% url 'heart' %}">Heart Prediction</a>
-								
 								</div>
 							</li>
-							
-							
-							
+
+
+
 							<li class="nav-item mx-lg-4">
 								<a class="nav-link" href="{% url 'doctor' %}">Doctor</a>
 							</li>
@@ -111,18 +110,18 @@
 									{{ request.user.first_name }}
 								</a>
 								<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-	
+
 									<a class="dropdown-item " href="{% url 'doctor-profile-update' %}"> EDIT PROFILE</a>
 									<a class="dropdown-item " href="{% url 'patient-list' %}"> PATIENTS</a>
 									<a class="dropdown-item " href="{% url 'doctor-appointment' %}"> APPOINTMENTS</a>
 									<a class="dropdown-item " href="{% url 'doctor-appointment-create' %}"> CREATE APPOINTMENT</a>
 									<a class="dropdown-item " href="{% url 'logout' %}">LOGOUT</a>
-									
-								
+
+
 								</div>
 							</li>
 							<!-- login -->
-						
+
 						{% elif request.user.is_authenticated and request.user.role == 'patient' %}
 						<!-- <li class="nav">
 							<a href="nav-link">  {{ request.user.first_name }}</a>
@@ -136,13 +135,13 @@
 
 								<a class="dropdown-item " href="{% url 'patient-profile-update' %}"> EDIT PROFILE</a>
 								<a class="dropdown-item " href="{% url 'logout' %}">LOGOUT</a>
-								
-							
+
+
 							</div>
 						</li>
 						<!-- login -->
-						
-					
+
+
 					{% else %}
 					<li class="nav-item dropdown nav-item  mx-lg-3 my-lg-0 my-3">
 						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
@@ -153,8 +152,8 @@
 
 							<a class="dropdown-item " href="{% url 'doctor-register' %}">DOCTOR</a>
 							<a class="dropdown-item " href="{% url 'patient-register' %}">PATIENT</a>
-							
-						
+
+
 						</div>
 					</li>
 				</ul>
@@ -166,6 +165,6 @@
 				</div>
 			</nav>
 		</div>
-	
+
 	</div>
 	<!-- //header 2 -->
