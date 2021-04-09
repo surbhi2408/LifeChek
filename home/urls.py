@@ -6,5 +6,4 @@ urlpatterns = [
     path('diabetes/',diabetes,name='diabetes'),
     path('breast/',breast,name='breast'),
     path('heart/',heart,name='heart'),
-    
 ]

@@ -1,5 +1,5 @@
 from django.contrib import messages, auth
-from django.http import HttpResponseRedirect
+from django.http import HttpResponseRedirect, Http404
 from django.shortcuts import render, redirect
 from django.views.generic import CreateView,FormView,RedirectView,UpdateView
 from accounts.forms import *
@@ -8,6 +8,7 @@ from .decorators import user_is_patient,user_is_doctor
 from django.urls import reverse_lazy
 from django.utils.decorators import method_decorator
 from django.contrib.auth.decorators import login_required
+from .forms import PatientRegistrationForm
 
 class RegisterPatientView(CreateView):
    
@@ -36,7 +37,8 @@ class RegisterPatientView(CreateView):
             user.save()
             return redirect('login')
         else:
-            return render(request, 'accounts/patient/register.html', {'form': form})
+            form = PatientRegistrationForm()
+        return render(request, 'accounts/patient/register.html', {'form': form})
 
 
 class LoginView(FormView):
@@ -154,7 +156,7 @@ class EditDoctorProfileView(UpdateView):
             self.object = self.get_object()
         except Http404:
             raise Http404("User doesn't exists")
-        
+
         return self.render_to_response(self.get_context_data())
 
     def get_object(self, queryset=None):
