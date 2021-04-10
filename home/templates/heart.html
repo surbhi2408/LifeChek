@@ -19,7 +19,7 @@
 				<hr />
       {% if context %}
       <div class="display-4 my-2 text-center">
-        Your {{ context }} heart disease
+        <p style="color:red;font-size:80%"><b>RESULT:</b></p>Your {{ context }} heart disease
       </div>
       {% endif %}
 			</div>
@@ -35,165 +35,143 @@
                           <div class="col-md-4">
                             <label style="color: black;" for="age">Age</label>
                             <div class="form-group">
-                              
+
                               <input
                                 type="number"
-                                step=".00001"
                                 class="form-control"
                                 id="age"
-                                value="0"
+                                placeholder="0"
                                 name="age"
                               />
                             </div>
                             <label style="color: black;" for="sex">Sex</label>
                             <div class="form-group">
-                              
+
                               <input
                                 type="number"
-                                step=".00001"
                                 class="form-control"
                                 id="sex"
-                                value="0"
+                                placeholder="0/1"
                                 name="sex"
                               />
                             </div>
-                            <label style="color: black;" for="cp">CP</label>
+                            <label style="color: black;" for="cp">Cerebral Palsy</label>
                             <div class="form-group">
-                             
+
                               <input
                                 type="number"
-                                step=".00001"
                                 class="form-control"
                                 id="cp"
-                                value="0"
+                                placeholder="0"
                                 name="cp"
                               />
                             </div>
-                            <label style="color: black;" for="trestbps">TRESTBPS</label>
+                            <label style="color: black;" for="trestbps">Resting BP (trestbps)</label>
                             <div class="form-group">
-                              
+
                               <input
                                 type="number"
-                                step=".00001"
                                 class="form-control"
                                 id="trestbps"
-                                value="0"
+                                placeholder="0"
                                 name="trestbps"
                               />
                             </div>
-                            <label style="color: black;" for="chol">CHOL</label>
+                            <label style="color: black;" for="chol">Cholesterol</label>
                             <div class="form-group">
-                              
+
                               <input
                                 type="number"
-                                step=".00001"
                                 class="form-control"
                                 id="chol"
-                                value="0"
+                                placeholder="0"
                                 name="chol"
                               />
                             </div>
                           </div>
                           <div class="col-md-4">
-                            <label style="color: black;" for="fbs">FBS</label>
+                            <label style="color: black;" for="fbs">Fasting Blood Sugar</label>
                             <div class="form-group">
-                             
+
                               <input
                                 type="number"
-                                step=".00001"
                                 class="form-control"
                                 id="fbs"
-                                value="0"
+                                placeholder="0/1"
                                 name="fbs"
                               />
                             </div>
-                            <label style="color: black;" for="restecg">RESTECG</label>
+                            <label style="color: black;" for="restecg">Rest ECG</label>
                             <div class="form-group">
-                              
+
                               <input
                                 type="number"
-                                step=".00001"
                                 class="form-control"
                                 id="restecg"
-                                value="0"
+                                placeholder="0/1"
                                 name="restecg"
                               />
                             </div>
-                            <label style="color: black;" for="thalach">THALACH</label>
+                            <label style="color: black;" for="thalach">Thalach (Max Heart Rate)</label>
                             <div class="form-group">
-                              
+
                               <input
                                 type="number"
-                                step=".00001"
                                 class="form-control"
                                 id="thalach"
-                                value="0"
+                                placeholder="0"
                                 name="thalach"
                               />
                             </div>
-                            <label style="color: black;" for="exang">EXANG</label>
+                            <label style="color: black;" for="oldpeak">Old Peak</label>
                             <div class="form-group">
-                              
+
                               <input
                                 type="number"
-                                step=".00001"
-                                class="form-control"
-                                id="exang"
-                                value="0"
-                                name="exang"
-                              />
-                            </div>
-                            <label style="color: black;" for="oldpeak">OLDPEAK</label>
-                            <div class="form-group">
-                              
-                              <input
-                                type="number"
-                                step=".00001"
+                                step=".01"
                                 class="form-control"
                                 id="oldpeak"
-                                value="0"
+                                placeholder="0"
                                 name="oldpeak"
                               />
                             </div>
                           </div>
                           <div class="col-md-4">
-                            <label style="color: black;" for="slope">SLOPE</label>
+                            <label style="color: black;" for="slope">Slope</label>
                             <div class="form-group">
-                              
+
                               <input
                                 type="number"
                                 step=".00001"
                                 class="form-control"
                                 id="slope"
-                                value="0"
+                                placeholder="0"
                                 name="slope"
                               />
                             </div>
-                            <label style="color: black;" for="ca">CA</label>
+                            <label style="color: black;" for="ca">Cancer & Carcinoma</label>
                             <div class="form-group">
-                              
+
                               <input
                                 type="number"
-                                step=".00001"
                                 class="form-control"
                                 id="ca"
-                                value="0"
+                                placeholder="0"
                                 name="ca"
                               />
                             </div>
-                            <label style="color: black;" for="thal">THAL</label>
+                            <label style="color: black;" for="thal">Thalassemia</label>
                             <div class="form-group mb-5">
-                             
+
                               <input
                                 type="number"
-                                step=".00001"
                                 class="form-control"
                                 id="thal"
-                                value="0"
+                                placeholder="0"
                                 name="thal"
                               />
                             </div>
-                    
+
                             <button type="submit" class="btn-lg btn-block btn btn-primary mb-5" style="background-color: green">
                               Submit
                             </button>

@@ -65,7 +65,7 @@
 					<!-- logo -->
 					<h1>
 						<a class="navbar-brand font-weight-bold font-italic" href="{% url 'home' %}">
-							Pandemic<span>CARE</span>
+							Life<span>Chek</span>
 							<i class="fas fa-medkit"></i>
 						</a>
 					</h1>
@@ -102,14 +102,17 @@
 								<a class="nav-link" href="{% url 'doctor' %}">Doctor</a>
 							</li>
 							{% if request.user.is_authenticated and request.user.role == 'doctor' %}
-							<!-- <li class="nav">
-								<a href="nav-link">  {{ request.user.first_name }}</a>
-							</li> -->
+							<a href="#">
+								<i class="fal fa-user-cog" style="color: white; font-size: 30px;"></i>
+							</a>
 							<li class="nav-item dropdown">
 								<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
 									aria-haspopup="true" aria-expanded="false">
 									{{ request.user.first_name }}
 								</a>
+<!--								<a href="#">-->
+<!--									<i class="fal fa-user-cog" style="color: white; font-size: 30px;"></i>-->
+<!--								</a>-->
 								<div class="dropdown-menu" aria-labelledby="navbarDropdown">
 
 									<a class="dropdown-item " href="{% url 'doctor-profile-update' %}"> EDIT PROFILE</a>
