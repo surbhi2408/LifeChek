@@ -174,3 +174,53 @@ def heart(request):
                       'context': value,
                    
                   })
+
+
+def lung_cancer(request):
+    df = pd.read_csv('data/lung_cancer.csv')
+    data = df.values
+    X = data[:, :-1]
+    Y = data[:, -1:]
+
+    value = ''
+
+    if request.method == 'POST':
+        name = float(request.POST['Name'])
+        surname = float(request.POST['Surname'])
+        age = float(request.POST['Age'])
+        smokes = float(request.POST['Smokes'])
+        areaq = float(request.POST['AreaQ'])
+        alkhol = float(request.POST['Alkhol'])
+
+        user_data = np.array(
+            (name,
+             surname,
+             age,
+             smokes,
+             areaq,
+             alkhol
+             )
+        ).reshape(1, 6)
+
+        rf = RandomForestClassifier(
+            n_estimators=16,
+            criterion='entropy',
+            max_depth=9
+        )
+
+        rf.fit(np.nan_to_num(X), Y)
+        rf.score(np.nan_to_num(X), Y)
+        predictions = rf.predict(user_data)
+
+        if int(predictions[0]) == 1:
+            value = 'have'
+        elif int(predictions[0]) == 0:
+            value = "don\'t have"
+
+    return render(request,
+                  'lung_cancer.html',
+                  {
+                      'context': value,
+
+                  })
+
