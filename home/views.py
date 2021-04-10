@@ -3,12 +3,15 @@ import numpy as np
 import pandas as pd
 from sklearn.neighbors import KNeighborsClassifier
 from sklearn.ensemble import RandomForestClassifier
+
+
 # Create your views here.
 def index(request):
-    return render(request,'index.html')
+    return render(request, 'index.html')
+
 
 def diabetes(request):
-    """ 
+    """
     Reading the training data set.
     """
     dfx = pd.read_csv('data/Diabetes_XTrain.csv')
@@ -57,13 +60,13 @@ def diabetes(request):
                   'diabetes.html',
                   {
                       'context': value,
-                      
+
                   }
                   )
 
+
 def breast(request):
-  
-    # Reading training data set. 
+    # Reading training data set.
 
     df = pd.read_csv('data/Breast_train.csv')
     data = df.values
@@ -71,9 +74,8 @@ def breast(request):
     Y = data[:, -1]
     print(X.shape, Y.shape)
 
-  
-    # Reading data from user. 
-    
+    # Reading data from user.
+
     value = ''
     if request.method == 'POST':
 
@@ -83,9 +85,8 @@ def breast(request):
         area = float(request.POST['area'])
         smoothness = float(request.POST['smoothness'])
 
-  
-        # Creating our training model. 
-        
+        # Creating our training model.
+
         rf = RandomForestClassifier(
             n_estimators=16, criterion='entropy', max_depth=5)
         rf.fit(np.nan_to_num(X), Y)
@@ -110,11 +111,12 @@ def breast(request):
                   'breast.html',
                   {
                       'context': value,
-                      
+
                   })
+
+
 def heart(request):
-  
-    df = pd.read_csv('data/Heart_train.csv')
+    df = pd.read_csv('data/Heart.csv')
     data = df.values
     X = data[:, :-1]
     Y = data[:, -1:]
@@ -131,7 +133,6 @@ def heart(request):
         fbs = float(request.POST['fbs'])
         restecg = float(request.POST['restecg'])
         thalach = float(request.POST['thalach'])
-        exang = float(request.POST['exang'])
         oldpeak = float(request.POST['oldpeak'])
         slope = float(request.POST['slope'])
         ca = float(request.POST['ca'])
@@ -146,12 +147,11 @@ def heart(request):
              fbs,
              restecg,
              thalach,
-             exang,
              oldpeak,
              slope,
              ca,
              thal)
-        ).reshape(1, 13)
+        ).reshape(1, 12)
 
         rf = RandomForestClassifier(
             n_estimators=16,
@@ -172,7 +172,7 @@ def heart(request):
                   'heart.html',
                   {
                       'context': value,
-                   
+
                   })
 
 
