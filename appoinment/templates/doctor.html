@@ -22,55 +22,6 @@ x{% extends 'base.html' %}
 					<i class="fas fa-user-md"></i>
 				</span>
 			</div>
-			<div class="row">
-				<div class="col-md-3">
-					<img src="{% static 'images/d1.jfif' %}" style="width:100%;margin-top:5%;height:200px">
-            		<div class="content" >
-                		<p align="center" style="color:black">Myntra</p>
-					</div>
-				</div>
-				<div class="col-md-3">
-					<img src="{% static 'images/d2.jfif' %}" style="width:100%;margin-top:5%;height:200px">
-            		<div class="content" >
-                		<p align="center" style="color:black">Myntra</p>
-					</div>
-				</div>
-				<div class="col-md-3">
-					<img src="{% static 'images/d3.jfif' %}" style="width:100%;margin-top:5%;height:200px">
-            		<div class="content" >
-                		<p align="center" style="color:black">Myntra</p>
-					</div>
-				</div>
-				<div class="col-md-3">
-					<img src="{% static 'images/d4.jfif' %}" style="width:100%;margin-top:5%;height:200px">
-            		<div class="content" >
-                		<p align="center" style="color:black">Myntra</p>
-					</div>
-				</div>
-				<div class="col-md-3">
-					<img src="{% static 'images/d5.jfif' %}" style="width:100%;margin-top:5%;height:200px">
-            		<div class="content" >
-                		<p align="center" style="color:black">Myntra</p>
-					</div>
-				</div>
-				<div class="col-md-3">
-					<img src="{% static 'images/d6.jfif' %}" style="width:100%;margin-top:5%;height:200px">
-            		<div class="content" >
-                		<p align="center" style="color:black">Myntra</p>
-					</div>
-				</div>
-				<div class="col-md-3">
-					<img src="{% static 'images/d7.jfif' %}" style="width:100%;margin-top:5%;height:200px">
-            		<div class="content" >
-                		<p align="center" style="color:black">Myntra</p>
-					</div>
-				</div>
-				<div class="col-md-3">
-					<img src="{% static 'images/d8.jfif' %}" style="width:100%;margin-top:5%;height:200px">
-            		<div class="content" >
-                		<p align="center" style="color:black">Myntra</p>
-					</div>
-				</div>
 
 			</div>
 			<div class="row inner-sec-w3layouts-agileinfo">
@@ -81,7 +32,14 @@ x{% extends 'base.html' %}
 					<div class="team-info">
                         {% if request.user.is_authenticated and request.user.role == 'patient' %}
 						<div class="caption">
-							<h4>{{ apt.full_name }}</h4>
+							<h4>
+								{{ apt.full_name }} &nbsp;
+								<span>
+								<a href="#">
+									<i class="fab fa-whatsapp" style="color: green; font-size: 30px;"></i>
+								</a>
+							</span>
+							</h4>
 						</div>
 
                         <h6>{{ apt.department }} Expert</h6>
@@ -90,8 +48,7 @@ x{% extends 'base.html' %}
                             in {{ apt.hospital_name }}</h6>
                         <h6>
                             AT {{ apt.location }} </i>
-                            <a href="{% url 'take-appointment' apt.id %}"> Take
-                                Appointment</a>
+                            <a href="{% url 'take-appointment' apt.id %}"><button class="btn btn-block" style="background-color: #4da33b;">Take Appointment</button></a>
                        </h6>
                        {% elif request.user.is_authenticated and request.user.role == 'doctor'   %}
                        <div class="caption">
