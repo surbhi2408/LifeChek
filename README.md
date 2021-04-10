@@ -10,7 +10,7 @@
   
 ## Table of Contents:
 
-## Technology Stack:
+### Technology Stack:
   BackEnd: 
   1) Django
   2) Machine Learning
@@ -25,7 +25,7 @@
 
 ## Contributors:
 
-Team Name: OP Squad
+Team Name: 3 Stree
 
 * [Surbhi Mayank](https://github.com/surbhi2408)
 * [Sakshi Gupta](https://github.com/sakshigupta08)
