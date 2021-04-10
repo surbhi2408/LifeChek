@@ -1398,7 +1398,7 @@ h4.price-clr {
 }
 
 .w3_agileits-contact-left {
-    background: url(../images/1.jpg) no-repeat 0px 0px;
+    background: url(../images/diabetic.jpg) no-repeat 0px 0px;
     background-size: cover;
     min-height: 533px;
 }
@@ -1526,8 +1526,23 @@ select.form-control:not([size]):not([multiple]) {
 /*--//gallery--*/
 /* appointment */
 .appoint-img {
-    background: url(../images/bg6.jpg) no-repeat left bottom fixed;
-    float: left;
+    background: url(../images/heart.jpg) no-repeat 0px 0px;
+    background-size: cover;
+    min-height: 533px;
+    width: 44%;
+}
+
+.breast-image{
+    background: url(../images/breastcancer.jpg) no-repeat 0px 0px;
+    background-size: cover;
+    min-height: 533px;
+    width: 44%;
+}
+
+.lung-cancer{
+    background: url(../images/lungcancer.jpg) no-repeat 0px 0px;
+    background-size: cover;
+    min-height: 533px;
     width: 44%;
 }
 
