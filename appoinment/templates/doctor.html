@@ -33,12 +33,7 @@ x{% extends 'base.html' %}
                         {% if request.user.is_authenticated and request.user.role == 'patient' %}
 						<div class="caption">
 							<h4>
-								{{ apt.full_name }} &nbsp;
-								<span>
-								<a href="https://wa.me/917754072259?text=Help">
-									<i class="fab fa-whatsapp" style="color: green; font-size: 30px;"></i>
-								</a>
-							</span>
+								{{ apt.full_name }}
 							</h4>
 						</div>
 

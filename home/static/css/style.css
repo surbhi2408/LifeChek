@@ -1002,6 +1002,34 @@ a.w3_agile_google:hover {
     overflow: hidden;
 }
 
+#about .col-md-6 h1{
+  font-family: 'Oswald', sans-serif;
+  color: #00374E;
+}
+
+#about .col-md-6 p{
+  font-family: 'Roboto', sans-serif;
+  color: #27677C;
+}
+
+.surbhi-image{
+    background: url(../images/Surbhi.jpg) no-repeat 0px 0px;
+    height: 400px;
+    width: 400px;
+}
+
+.sakshi-image{
+    background: url(../images/Sakshi.jpg) no-repeat 0px 0px;
+    height: 400px;
+    width: 400px;
+}
+
+.ishita-image{
+    background: url(../images/Ishita.jpg) no-repeat 0px 0px;
+    height: 400px;
+    width: 400px;
+}
+
 .team-grids h4 {
     font-size: 1.1em;
     font-weight: 600;

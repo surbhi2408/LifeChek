@@ -67,6 +67,16 @@ class DoctorPageView(ListView):
 
     def get_queryset(self):
         return self.model.objects.all().order_by('-id')
+
+class PhyPageView(ListView):
+    paginate_by = 9
+    model = Appointment
+    context_object_name = 'phy'
+    template_name = "phy.html"
+
+    def get_queryset(self):
+        return self.model.objects.all().order_by('-id')
+
 class TakeAppointmentView(CreateView):
     template_name = 'appointment/take_appointment.html'
     form_class = TakeAppointmentForm
