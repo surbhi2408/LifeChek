@@ -116,7 +116,7 @@ a:hover {
 /* header */
 /* top bar */
 .top-bar {
-    background: #4575bd;
+    background: #406b45;
 }
 
 /* social icons */
@@ -147,7 +147,7 @@ a:hover {
 .header-top_w3layouts p,
 .header-w3layouts p,
 .top-w3layouts p {
-    font-size: 14px;
+    font-size: 12px;
 }
 
 .header-top_w3layouts,
@@ -221,7 +221,7 @@ nav.fixed-navi ul li {
     right: 0;
     box-shadow: 1px 2px 5px 1px rgba(8, 8, 8, 0.35);
     z-index: 999;
-    background: #4575bd;
+    background: #42a82d;
     -webkit-transition: box-shadow .3s ease-in-out;
     -moz-transition: box-shadow .3s ease-in-out;
     -ms-transition: box-shadow .3s ease-in-out;
@@ -267,12 +267,13 @@ a.login-button {
     letter-spacing: 1px;
     font-size: 16px;
     padding: 10px 15px;
-    background: #000;
+    background: #f44336;
     display: inline-block;
 }
 
 a.login-button:hover {
-    background: #f44336;
+    background: #fff;
+    color: #f44336;
 }
 
 /* //login button */
@@ -357,7 +358,7 @@ button.submit:hover {
 }
 
 .banner-top1 {
-    background: url(../images/banner1.jpg) no-repeat 0px 0px;
+    background: url(../images/bgbanner1.jpg) no-repeat 0px 0px;
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -366,7 +367,7 @@ button.submit:hover {
 }
 
 .banner-top2 {
-    background: url(../images/1.jpg) no-repeat 0px 0px;
+    background: url(../images/bgbanner2.jpg) no-repeat 0px 0px;
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -375,7 +376,7 @@ button.submit:hover {
 }
 
 .banner-top3 {
-    background: url(../images/banner2.jpg) no-repeat 0px 0px;
+    background: url(../images/bgbanner3.png) no-repeat 0px 0px;
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -385,6 +386,7 @@ button.submit:hover {
 
 .banner-info_agile_w3ls {
     padding-top: 18em;
+    text-align: center;
 }
 
 .banner-info_agile_w3ls h3 {
@@ -392,6 +394,7 @@ button.submit:hover {
     color: #fff;
     letter-spacing: 1px;
     font-weight: 600;
+    text-align: center;
 }
 
 .banner-info_agile_w3ls h3 span {
@@ -400,8 +403,9 @@ button.submit:hover {
 }
 
 .banner-info_agile_w3ls p {
-    max-width: 900px;
     color: #f3f3f3;
+    text-align: center;
+    font-size: 20px;
 }
 
 .banner-info_agile_w3ls a {
@@ -859,7 +863,7 @@ h3.title {
 /* //treatments */
 /* footer */
 footer {
-    background: url(../images/bg3.jpg) no-repeat center fixed;
+    background: url(../images/footer.jpg);
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -950,7 +954,7 @@ a.w3_agile_google:hover {
 /* inner pages */
 /* about page */
 .inner-banner-w3ls {
-    background: url(../images/banner3.jpg) no-repeat center;
+    background: url(../images/banner3.png) no-repeat center;
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;

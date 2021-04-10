@@ -1,7 +1,7 @@
 	<!-- header -->
 	<header>
 		<!-- top-bar -->
-		<div class="top-bar py-3">
+		<div class="top-bar py-1">
 			<div class="container">
 				<div class="row">
 					<div class="col-lg-7 top-social-agile">
@@ -20,7 +20,7 @@
 								</li>
 								<li>
 									<a href="#">
-										<i class="fab fa-google-plus-g"></i>
+										<i class="fab fa-instagram"></i>
 									</a>
 								</li>
 								<li class="ml-3">
@@ -40,8 +40,8 @@
 						<div class="row">
 							<div class="col-lg-7 col-6 top-w3layouts">
 								<p class="text-white">
-									<i class="far fa-envelope-open mr-2"></i>
-									<a href="" class="text-white">info@example.com</a>
+									<i class="far fa-envelope mr-2"></i>
+									<a href="" class="text-white">surbhi@gmail.com</a>
 								</p>
 							</div>
 							<div class="col-lg-5 col-6 header-w3layouts pl-4 text-lg-left">
@@ -96,7 +96,7 @@
 							</li>
 
 
-
+							<!-- NavBar for doctor when logged in -->
 							<li class="nav-item mx-lg-4">
 								<a class="nav-link" href="{% url 'doctor' %}">Doctor</a>
 							</li>
@@ -116,8 +116,6 @@
 									<a class="dropdown-item " href="{% url 'doctor-appointment' %}"> APPOINTMENTS</a>
 									<a class="dropdown-item " href="{% url 'doctor-appointment-create' %}"> CREATE APPOINTMENT</a>
 									<a class="dropdown-item " href="{% url 'logout' %}">LOGOUT</a>
-
-
 								</div>
 							</li>
 							<!-- login -->
@@ -141,7 +139,7 @@
 						</li>
 						<!-- login -->
 
-
+					<!-- dropdown for registering doctor and patient -->
 					{% else %}
 					<li class="nav-item dropdown nav-item  mx-lg-3 my-lg-0 my-3">
 						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
@@ -152,8 +150,6 @@
 
 							<a class="dropdown-item " href="{% url 'doctor-register' %}">DOCTOR</a>
 							<a class="dropdown-item " href="{% url 'patient-register' %}">PATIENT</a>
-
-
 						</div>
 					</li>
 				</ul>
