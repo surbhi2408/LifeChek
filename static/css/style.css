@@ -1524,7 +1524,7 @@ select.form-control:not([size]):not([multiple]) {
 .appoint-img {
     background: url(../images/heart.jpg) no-repeat 0px 0px;
     background-size: cover;
-    min-height: 533px;
+    min-height: 532px;
     width: 44%;
 }
 
