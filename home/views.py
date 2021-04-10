@@ -185,22 +185,18 @@ def lung_cancer(request):
     value = ''
 
     if request.method == 'POST':
-        name = float(request.POST['Name'])
-        surname = float(request.POST['Surname'])
-        age = float(request.POST['Age'])
-        smokes = float(request.POST['Smokes'])
-        areaq = float(request.POST['AreaQ'])
-        alkhol = float(request.POST['Alkhol'])
+        Age = float(request.POST['Age'])
+        Smokes = float(request.POST['Smokes'])
+        AreaQ = float(request.POST['AreaQ'])
+        Alcohol = float(request.POST['Alcohol'])
 
         user_data = np.array(
-            (name,
-             surname,
-             age,
-             smokes,
-             areaq,
-             alkhol
+            (Age,
+             Smokes,
+             AreaQ,
+             Alcohol
              )
-        ).reshape(1, 6)
+        ).reshape(1, 4)
 
         rf = RandomForestClassifier(
             n_estimators=16,
