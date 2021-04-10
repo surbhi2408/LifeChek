@@ -2,8 +2,6 @@ x{% extends 'base.html' %}
 {% load static %}
 {% block title %}Appointment List{% endblock %}
 
-
-
 {% block content %}
 
 	<!-- banner 2 -->
@@ -83,9 +81,7 @@ x{% extends 'base.html' %}
 					<div class="team-info">
                         {% if request.user.is_authenticated and request.user.role == 'patient' %}
 						<div class="caption">
-
 							<h4>{{ apt.full_name }}</h4>
-
 						</div>
 
                         <h6>{{ apt.department }} Expert</h6>
