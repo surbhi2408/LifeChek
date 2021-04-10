@@ -16,10 +16,12 @@
   2) Machine Learning
   
   FrontEnd:
-  3) HTML
-  4) CSS
-  5) JavaScript
-  6) Bootstrap
+  <ol type="1">
+    <li> HTML </li>
+    <li> CSS </li>
+    <li> JavaScript </li>
+    <li> Bootstrap </li>
+  </ol>
 
 ## Contributors:
 
