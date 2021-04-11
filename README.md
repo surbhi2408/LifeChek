@@ -13,6 +13,17 @@
 ## Presentation Link:
 [ppt link here](https://www.canva.com/design/DAEbTKnmtd8/tqnHTjvyOZnV0eVgIHYsfA/view?utm_content=DAEbTKnmtd8&utm_campaign=designshare&utm_medium=link&utm_source=viewer)
 
+## Features:
+<ol type="1">
+  <li> There are two options for login and sign up i.e. as a Doctor and a Patient. </li>
+  <li> User can get prediction of various kinds of diseases. </li>
+  <li> User can communicate with chat bot which will guide the user throughout the website. </li>
+  <li> User can directly chat with mental health counselors via WhatsApp. </li>
+  <li> Doctor can view, edit, delete the appointments. </li>
+  <li> Patients can take appointments of doctor. </li>
+  <li> Doctors can view the patient's list and edit the response got by patients. </li>
+</ol>
+
 ### Technology Stack:
   BackEnd: 
   1) Django
