@@ -4,10 +4,12 @@
 
 <a href="https://hack36.com"> <img src="http://bit.ly/BuiltAtHack36" height=20px> </a>
 
-
 ## Introduction:
   Welcome to our website LifeChek, pandemic made easy. During these difficult times of global pandemic doctors are mainly involved in curing corona virus due to which it has become difficult to get access to doctors regarding other important diseases such diabetes, lung disease, breast cancer, heart disease and most importantly our deteriorating mental health in these tough times. Our website provides easy way to predict diseases which is done by intelligent and well trained machine learning algorithms such as K Nearest Neighbour and Random Forest Classifier with easy access to consult doctors by taking appointments. Separate section is created for mental health regarding consultation wherein the patient can interact directly with the respective doctors. A chatbot is also added to clear your doubts and contains shortcut links for easy browsing experience throughout the website. Patients can fill the appointment form where they can choose their doctors and include essential information. Doctors can login through their profile and maintain their patients' records smoothly without much hassle.
   
+## Demo Video Link:
+[demo video link](https://drive.google.com/file/d/11oRFAbe_bx5CxvDKVqL3WE8VNvwQiKvn/view?usp=sharing)
+
 ## Presentation Link:
 [ppt link here](https://www.canva.com/design/DAEbTKnmtd8/tqnHTjvyOZnV0eVgIHYsfA/view?utm_content=DAEbTKnmtd8&utm_campaign=designshare&utm_medium=link&utm_source=viewer)
 
